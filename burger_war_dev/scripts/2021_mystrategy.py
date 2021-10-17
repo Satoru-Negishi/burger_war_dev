@@ -19,6 +19,10 @@ import actionlib_msgs
 #from cv_bridge import CvBridge, CvBridgeError
 #import cv2
 
+import json
+import os
+import math
+
 
 class NaviBot():
     def __init__(self):
@@ -55,19 +59,44 @@ class NaviBot():
             return self.client.get_result()        
 
 
+    def calcTwist(self,th):
+        twist = Twist()
+        twist.linear.x = 0; twist.linear.y = 0; twist.linear.z = 0
+        twist.angular.x = 0; twist.angular.y = 0; twist.angular.z = th
+        return twist
+
+    def go_goalpoint(self,r):
+        goal_point = [[-0.87,0,math.radians(0)], \
+                      [0,0.88,math.radians(270)], \
+                      [0.87,0,math.radians(180)], \
+                      [0,-0.88,math.radians(90)]]
+
+        out_way = [
+            [-0.71, 0.71, math.radians(45)], #[0] home <-> left out
+            [0.71, 0.71, math.radians(315)], #[1] left <-> enemy out
+            [0.71, -0.71, math.radians(225)], #[2] enemy <-> right out
+            [-0.71, -0.71, math.radians(135)], #[3] right <-> home out
+        ]
+        for G,W in zip(goal_point,out_way):
+            self.setGoal(G[0],G[1],G[2])
+            theta = [-2,2]
+            for th,n in zip(theta,range(1,3)):
+                for i in range(0,4*n):
+                    twist = self.calcTwist(th)
+                    self.vel_pub.publish(twist)
+                    r.sleep()
+            twist = self.calcTwist(th=0)
+            self.vel_pub.publish(twist)
+
+            self.setGoal(W[0], W[1], W[2])
+
     def strategy(self):
         r = rospy.Rate(5) # change speed 5fps
 
+        while not rospy.is_shutdown():
+            self.go_goalpoint(r)
         # self.setGoal(-0.5,0,0)
         # self.setGoal(-0.5,0,3.1415/2)
-        
-        # self.setGoal(0,0.5,0)
-        # self.setGoal(0,0.5,3.1415)
-        
-        # self.setGoal(-0.5,0,-3.1415/2)
-        
-        # self.setGoal(0,-0.5,0)
-        # self.setGoal(0,-0.5,3.1415)
 
 
 

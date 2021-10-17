@@ -1,0 +1,276 @@
+{
+  "now": {
+    "targets": [
+      {
+        "player": "n", 
+        "name": "BL_B"
+      }, 
+      {
+        "player": "n", 
+        "name": "BL_L"
+      }, 
+      {
+        "player": "n", 
+        "name": "BL_R"
+      }, 
+      {
+        "player": "n", 
+        "name": "RE_B"
+      }, 
+      {
+        "player": "n", 
+        "name": "RE_L"
+      }, 
+      {
+        "player": "n", 
+        "name": "RE_R"
+      }, 
+      {
+        "coordinate": [
+          -2, 
+          3
+        ], 
+        "player": "n", 
+        "num": 6, 
+        "name": "Tomato_N"
+      }, 
+      {
+        "coordinate": [
+          -2, 
+          2
+        ], 
+        "player": "n", 
+        "num": 5, 
+        "name": "Tomato_S"
+      }, 
+      {
+        "coordinate": [
+          2, 
+          3
+        ], 
+        "player": "n", 
+        "num": 8, 
+        "name": "Omelette_N"
+      }, 
+      {
+        "coordinate": [
+          2, 
+          2
+        ], 
+        "player": "n", 
+        "num": 9, 
+        "name": "Omelette_S"
+      }, 
+      {
+        "coordinate": [
+          -2, 
+          -2
+        ], 
+        "player": "n", 
+        "num": 3, 
+        "name": "Pudding_N"
+      }, 
+      {
+        "coordinate": [
+          -2, 
+          -3
+        ], 
+        "player": "n", 
+        "num": 2, 
+        "name": "Pudding_S"
+      }, 
+      {
+        "coordinate": [
+          2, 
+          -2
+        ], 
+        "player": "n", 
+        "num": 11, 
+        "name": "OctopusWiener_N"
+      }, 
+      {
+        "coordinate": [
+          2, 
+          -3
+        ], 
+        "player": "n", 
+        "num": 12, 
+        "name": "OctopusWiener_S"
+      }, 
+      {
+        "coordinate": [
+          0, 
+          1
+        ], 
+        "player": "b", 
+        "num": 7, 
+        "name": "FriedShrimp_N"
+      }, 
+      {
+        "coordinate": [
+          1, 
+          0
+        ], 
+        "player": "n", 
+        "num": 10, 
+        "name": "FriedShrimp_E"
+      }, 
+      {
+        "coordinate": [
+          -1, 
+          0
+        ], 
+        "player": "n", 
+        "num": 4, 
+        "name": "FriedShrimp_W"
+      }, 
+      {
+        "coordinate": [
+          0, 
+          -1
+        ], 
+        "player": "n", 
+        "num": 1, 
+        "name": "FriedShrimp_S"
+      }
+    ], 
+    "time": 32.227867126464844
+  }, 
+  "log": {
+    "targets": [
+      {
+        "player": "n", 
+        "name": "BL_B"
+      }, 
+      {
+        "player": "n", 
+        "name": "BL_L"
+      }, 
+      {
+        "player": "n", 
+        "name": "BL_R"
+      }, 
+      {
+        "player": "n", 
+        "name": "RE_B"
+      }, 
+      {
+        "player": "n", 
+        "name": "RE_L"
+      }, 
+      {
+        "player": "n", 
+        "name": "RE_R"
+      }, 
+      {
+        "coordinate": [
+          -2, 
+          3
+        ], 
+        "player": "n", 
+        "num": 6, 
+        "name": "Tomato_N"
+      }, 
+      {
+        "coordinate": [
+          -2, 
+          2
+        ], 
+        "player": "n", 
+        "num": 5, 
+        "name": "Tomato_S"
+      }, 
+      {
+        "coordinate": [
+          2, 
+          3
+        ], 
+        "player": "n", 
+        "num": 8, 
+        "name": "Omelette_N"
+      }, 
+      {
+        "coordinate": [
+          2, 
+          2
+        ], 
+        "player": "n", 
+        "num": 9, 
+        "name": "Omelette_S"
+      }, 
+      {
+        "coordinate": [
+          -2, 
+          -2
+        ], 
+        "player": "n", 
+        "num": 3, 
+        "name": "Pudding_N"
+      }, 
+      {
+        "coordinate": [
+          -2, 
+          -3
+        ], 
+        "player": "n", 
+        "num": 2, 
+        "name": "Pudding_S"
+      }, 
+      {
+        "coordinate": [
+          2, 
+          -2
+        ], 
+        "player": "n", 
+        "num": 11, 
+        "name": "OctopusWiener_N"
+      }, 
+      {
+        "coordinate": [
+          2, 
+          -3
+        ], 
+        "player": "n", 
+        "num": 12, 
+        "name": "OctopusWiener_S"
+      }, 
+      {
+        "coordinate": [
+          0, 
+          1
+        ], 
+        "player": "b", 
+        "num": 7, 
+        "name": "FriedShrimp_N"
+      }, 
+      {
+        "coordinate": [
+          1, 
+          0
+        ], 
+        "player": "n", 
+        "num": 10, 
+        "name": "FriedShrimp_E"
+      }, 
+      {
+        "coordinate": [
+          -1, 
+          0
+        ], 
+        "player": "n", 
+        "num": 4, 
+        "name": "FriedShrimp_W"
+      }, 
+      {
+        "coordinate": [
+          0, 
+          -1
+        ], 
+        "player": "n", 
+        "num": 1, 
+        "name": "FriedShrimp_S"
+      }
+    ], 
+    "time": 29.211278200149536
+  }
+}
