@@ -95,8 +95,6 @@ class NaviBot():
 
         while not rospy.is_shutdown():
             self.go_goalpoint(r)
-        # self.setGoal(-0.5,0,0)
-        # self.setGoal(-0.5,0,3.1415/2)
 
 
 
